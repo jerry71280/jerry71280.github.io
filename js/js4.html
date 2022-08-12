@@ -1,0 +1,18 @@
+<script>
+    //陣列的宣告 new Array('國文','英文','數學','地理') , 必須是相同資料型態
+    // Array
+    // 陣列取長度 用length
+        arrayMajor = new Array('國文','英文','數學','地理'); //宣告陣列
+        for (i=0 ; i < arrayMajor.length ; i++) {  //利用length屬性取得陣列的元素個數
+            console.log(`第${i+1}個陣列元素是 ${arrayMajor[i]}`);
+        }
+
+    //iterator 迭代器
+    var arr = [1,2,3];
+    var iter = arr[Symbol.iterator]();//Symbol.iterator 屬性的值為一個符合迭代器協議的函式
+    console.log(iter)
+    console.log(iter.next())
+    console.log(iter.next())
+    console.log(iter.next())
+    console.log(iter.next())
+</script>
